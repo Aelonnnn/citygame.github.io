@@ -38,8 +38,25 @@
   <div id="pixi-container">
     <!-- <canvas></canvas> -->
   </div>
-   
-  <div id="side-menu" class="debug">
+  
+      
+
+      <form id="zoom">
+        <input type="number" id="zoom-amount" value=1 step=0.1>
+        <button id="zoomBtn">zoom</button>
+      </form>
+      <br>
+      <div id ="load-buttons">
+        <button id="saveBtn">save</button>
+        <button id="loadBtn">load</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="bottom-menu">
+  <div id="date"></div>
+  <div id="bottom-menu" class="debug-hidden">
     <!-- The real side menu is under react-container. This is kept here for debug and laziness purposes -->
     <select name="editmode" id="editmode-select">
       <option value="edit-world">edit</option>
@@ -75,24 +92,6 @@
         <option value="landValue">value</option>
         <option value="underground">underground</option>
       </select>
-  
-      
-
-      <form id="zoom">
-        <input type="number" id="zoom-amount" value=1 step=0.1>
-        <button id="zoomBtn">zoom</button>
-      </form>
-      <br>
-      <div id ="load-buttons">
-        <button id="saveBtn">save</button>
-        <button id="loadBtn">load</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div id="bottom-menu">
-  <div id="date"></div>
 
   <div id="speed" class="debug">
     <label for="speed-control">Speed</label>
